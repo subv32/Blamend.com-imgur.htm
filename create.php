@@ -1,7 +1,6 @@
 <?php
 $urla = escapeshellarg($_GET["url"]);
 $urla = trim($urla);
-echo $urla;
 if (strpos($urla,'imgur.com/') !== false && substr($urla,0,5) == '\'http') {
         shell_exec("sed s/'<\/body><\/html>'\/\/ imgur.htm > imgur.htm2; mv imgur.htm2 imgur.htm");
         $command = "echo '<a href=" . $urla . "><img src=" . $urla . " height=250 width=250/></a>' >> imgur.htm";
