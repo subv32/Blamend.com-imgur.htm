@@ -1,4 +1,2 @@
-# create.php
-
-I'm a hammer and every problem is a nail
-Ignore this
+#Blamend.com-imgur.htm
+Blamend.com/imgur.htm (NSFW) files...
