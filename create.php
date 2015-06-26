@@ -1,5 +1,5 @@
 <?php
-
+//I'm a hammer.. I'm a hammer.. I'll bash you til you work..
 shell_exec("sed s/'<\/body><\/html>'\/\/ imgur.htm > imgur.htm2; mv imgur.htm2 imgur.htm");
 
 $urla = escapeshellarg($_GET["url"]);
