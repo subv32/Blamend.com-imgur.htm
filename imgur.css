@@ -1,0 +1,10 @@
+#header {                                                                                                                      
+font-size: 1.5em;
+ }
+
+#displayControls {
+font-size: 1.2em;
+color: white;
+background: black;  
+}
+#displayControls a { color: white; }
