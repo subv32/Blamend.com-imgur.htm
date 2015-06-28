@@ -13,8 +13,10 @@ else {
   echo "<a href=https://hightechlowlife.eu/board/threads/random-imgur-image-by-bruteforcing-img-id.790/>HTLL Thread</a>";                                                                 
   echo "</br>";                                                                                                                                                                           
   echo "<div id=displayControls>Show me: ";                                                                                                                                               
-  $displayControls=shell_exec('echo "10 20 30 40 50 60 70 80 90 100" | for i in $(cat /dev/stdin); do echo "<a href=?display=$i>$i</a>"; done');                                          
-  echo $displayControls;                                                                                                                                                                  
+  
+  //Create the display controls
+  for ($i = 10; $i < 110; $i += 10) { echo '<a href="?display=' . $i . '">' . $i . '</a> '; }
+                                                                                                                                                                
   $numberOfImages=shell_exec('cat imgur.db | wc -l');                                                                                                                                     
   echo "</div></b><br/> " .  $numberOfImages . " images found so far!</center><br/>";                                                                                                     
   echo $page;                                                                                                                                                                             
